@@ -1,2 +1,2 @@
-# C
- C언어
+web programming
+HTML, CSS, JAVA SCRIPT
