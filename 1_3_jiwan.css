@@ -1,0 +1,11 @@
+div {
+  font-size: 20pt;
+  border: 5px double;
+  color: #ffffff;
+  text-align: center;
+  border-width: 10px 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff0000,#01af01,#0000ff);
+  width: 300px;
+  box-sizing: border-box;
+}
