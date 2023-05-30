@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    #option li label {
+        width: 80px;
+        float: left;
+        text-align: center;
+    }
+    #divs {
+        width: 480px;
+        margin: 40px auto;
+    }
+    li {
+        padding: 0px;
+    }
+    ul {
+        list-style: none;
+        padding-left: 30px;
+    }
+    li label:first-child {
+        font-weight: bold;
+    }
+    #send {
+        display: flex;
+        justify-content: center;
+        margin-left: 3px;
+    }
+    .sends{
+        background-color: #fafafa;
+        width: 70px;
+        height: 20px;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+
+   </style>
+</head>
+<body>
+    <div id="divs">
+        <form action="" autocomplete="on">
+            <fieldset>
+                <legend>회원가입</legend>
+                <ul id="option">
+                    <li>
+                        <label for="name" >이름</label>
+                        <input type="text" id="name" placeholder="이름입력">
+                    </li>
+                    <li>
+                        <label for="mail">이메일</label>
+                        <input type="email" id="mail">
+                    </li>
+                    <li>
+                        <label for="jiwan">관심분야</label> <!--여기 확인해야함-->
+                        <label><input type="checkbox" value="camping" name="jiwan1">캠핑</label>
+                        <label><input type="checkbox" value="climb" name="jiwan2">등산</label>
+                        <label><input type="checkbox" value="movie" name="jiwan3" checked>영화</label>
+                        <label><input type="checkbox" value="book" name="jiwan4">독서</label><li>
+                        </li>
+                    </li>
+                    <li>
+                        <label for="national">국적 선택</label>
+                        <select id="national">
+                            <option selected>대한민국</option>
+                            <option>미국</option>
+                            <option>중국</option>
+                            <option>일본</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="age">나이선택</label>
+                        <input type="range" id="age" min="0" max="4">(10대/20대/30대/40대)
+                    </li>
+                    <li>
+                        <label for="gen">성별선택</label>
+                        <label><input type="radio" id="gen" name="gen1" checked>여성</label>
+                        <label><input type="radio" id="gen" name="gen1">남성</label>
+                    </li>
+                    <br> <!--여기 이상함-->
+                    <li>
+                        <label for="memo">건의사항</label>
+                        <textarea id="memo" cols="30" rows="5"></textarea>
+                    </li>
+                </ul>
+                <div id="send">
+                    <input class="sends" type="submit" value="정보전송">
+                    <input class="sends" type="reset" value="입력취소">
+                </div>
+            </fieldset>
+           
+        </form>
+    </div>
+</body>
+</html>
