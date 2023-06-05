@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <form name="myname" onsubmit="return process()">
+   <input type="text" name="jiwan" size="10" />
+   <input type="submit">
+  </form>
+  <script>
+    function process() {
+      var inputValue = document.forms["myname"]["jiwan"].value;
+      document.write(inputValue);
+    }
+  </script>
+ </body>
+</html>
