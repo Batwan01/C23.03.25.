@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    #option li label{
+      float: left;
+      justify-content: center;
+      width: 80px;
+    }
+    li>label:first-child {
+      font-weight: bold;
+    }
+    #divs{
+      width: 480px;
+      margin: 40px auto;
+    }
+    #send{
+      justify-content: center;
+      display: flex;
+    }
+    ul{
+      list-style-type: none;
+      padding-left: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div id="divs">
+    <form>
+      <fieldset>
+        <legend style="font-weight: bold;">회원가입</legend>
+        <br>
+        <ul id="option">
+          <li>
+            <label for="name">이름</label>
+            <input id="name" type="text" placeholder="이름입력">
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <input id="email" type="email">
+          </li>
+          <li>
+            <label for="interest">관심분야</label>
+            <input type="checkbox" id="interest" name="jiwan1">캠핑
+            <input type="checkbox" id="interest" name="jiwan2">등산
+            <input type="checkbox" id="interest" name="jiwan3" checked>영화
+            <input type="checkbox" id="interest" name="jiwan4">독서
+          </li>
+          <li>
+            <label for="national">국적 선택</label>
+            <select id="national">
+              <option selected>대한민국</option>
+              <option>미국</option>
+              <option>중국</option>
+              <option>일본</option>
+            </select>
+          </li>
+          <li>
+            <label for="age">나이선택</label>
+            <input id="age" min="0" max="4" value="0" type="range">(10대/20대/30대/40대)
+          </li>
+          <li>
+            <label for="gen">성별선택</label>
+            여성<input checked type="radio" name="gen1" id="gen">
+            남성<input type="radio" name="gen1" id="gen">
+          </li>
+          <li>
+            <label for="memo" style="margin-top: 10px;">건의사항</label>
+            <textarea id="memo" rows="4" cols="30"></textarea>
+          </li>
+        </ul>
+        <div id="send">
+          <input type="submit" value="정보전송">
+          <input type="reset" value="입력취소" style="margin-left: 5px;">
+        </div>
+        <br>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
